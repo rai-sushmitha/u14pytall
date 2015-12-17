@@ -1,4 +1,4 @@
-FROM drydock/u14all:tip
+FROM drydock/u14all:prod
 
 ADD . /u14pytall
 
