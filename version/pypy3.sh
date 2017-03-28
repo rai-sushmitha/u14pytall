@@ -3,7 +3,7 @@
 echo "================= Installing PYPY3 ==================="
 
 #install Pypy
-wget https://bitbucket.org/pypy/pypy/downloads/pypy3-2.4.0-linux64.tar.bz2
+wget -nv https://bitbucket.org/pypy/pypy/downloads/pypy3-2.4.0-linux64.tar.bz2
 tar -xvf pypy3-2.4.0-linux64.tar.bz2 -C /opt/
 cp -s /opt/pypy3-2.4.0-linux64/bin/pypy3 /usr/bin/pypy3
 mkdir /opt/pypy3
