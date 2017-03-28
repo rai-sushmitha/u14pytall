@@ -3,7 +3,7 @@
 echo "================= Installing PYPY ==================="
 
 #install Pypy
-wget https://bitbucket.org/pypy/pypy/downloads/pypy-4.0.1-linux64.tar.bz2
+wget -nv https://bitbucket.org/pypy/pypy/downloads/pypy-4.0.1-linux64.tar.bz2
 tar -xvf pypy-4.0.1-linux64.tar.bz2 -C /opt/
 cp -s /opt/pypy-4.0.1-linux64/bin/pypy /usr/bin/pypy
 mkdir /opt/pypy
