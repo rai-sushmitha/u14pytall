@@ -15,7 +15,7 @@ virtualenv -p pypy $HOME/venv/pypy
 
 # Install pip packages
 . $HOME/venv/pypy/bin/activate
-pip install pyopenssl ndg-httpsclient pyasn1
+pip install cryptography==1.8.2 pyopenssl ndg-httpsclient pyasn1
 pip install nose mock pytest coverage
 
 # optional lxml package as lxml is not compatible with pypy
