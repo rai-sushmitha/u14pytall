@@ -18,7 +18,9 @@ python setup.py install
 cd /
 
 #!/bin/bash
-for file in /u14pytall/version/*;
-do
-  $file
-done
+#for file in /u14pytall/version/*;
+#do
+#  $file
+#done
+
+. /u14pytall/version/pypy3.sh

@@ -1,6 +1,6 @@
 #!/bin/bash -e
 
-echo "================= Installing Python 2.7 ==================="
+echo "================= Installing Python 2.7.13 ==================="
 sudo apt-get install -y python python-dev python-pip python-virtualenv
 
 # Install virtualenv

@@ -3,17 +3,22 @@
 echo "================= Installing PYPY3 ==================="
 
 #install Pypy
-wget -nv https://bitbucket.org/pypy/pypy/downloads/pypy3-2.4.0-linux64.tar.bz2
-tar -xvf pypy3-2.4.0-linux64.tar.bz2 -C /opt/
-cp -s /opt/pypy3-2.4.0-linux64/bin/pypy3 /usr/bin/pypy3
+wget -nv https://bitbucket.org/pypy/pypy/downloads/pypy3-v5.8.0-linux64.tar.bz2
+tar -xvf pypy3-v5.8.0-linux64.tar.bz2 -C /opt/
+cp -s /opt/pypy3-v5.8.0-linux64/bin/pypy3 /usr/bin/pypy3
 mkdir /opt/pypy3
 mkdir /opt/pypy3/site-packages/
-cd /opt/pypy
+cd /opt/pypy3
 
-#Install virtualenv
+echo "============= Install virtualenv ============="
+
+
 virtualenv -p pypy3 $HOME/venv/pypy3
+#virtualenv pypy3 -p ~/opt/pypy3-2.1-beta1-osx64/bin/pypy 
+#pyenv virtualenv -p pypy3 $HOME/venv/pypy3
 
-# Install pip packages
+
+echo "======= Install pip packages ========="
 . $HOME/venv/pypy3/bin/activate
 #not supported
 #pip install pyopenssl ndg-httpsclient pyasn1
